@@ -2,6 +2,8 @@
 
 이 문서는 **Windows**와 **macOS** 사용자가 Docker와 VSCode DevContainer 기능을 활용하여 C 개발 및 디버깅 환경을 빠르게 구축할 수 있도록 도와줍니다.
 
+추가로 CSAPP 11장 학습 자료와 Tiny/Proxy 과제용 가이드는 [study/README.md](study/README.md)에서 볼 수 있습니다.
+
 [**주의**] 지난 주차와 다른 점만 하시려면 4장부터 7장만 보세요.
 [**주의**] webproxy-lab의 경우 tiny 웹 서버와 proxy 서버 두가지를 구현해야 해서 두가지 debugging 설정을 제공합니다. 이에 대한 설명은 7장에서 설명하니 꼭 읽어보시기 바랍니다.
 
