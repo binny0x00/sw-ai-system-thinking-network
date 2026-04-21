@@ -17,17 +17,17 @@ make
 
 ## 실행
 
-서버:
-
-```bash
-./echoserver 8000
-```
-
-클라이언트:
-
-```bash
-./echoclient 127.0.0.1 8000
-```
+1. 서버 실행
+	- server : /webproxy-lab/echo$ ./echoserver 8080
+2. 다른 터미널에서 접속
+	- client : ./echoclient localhost 8080
+	- server : accepted connection from (localhost, 51246) client 소켓 연결 정보 뜸
+3. 접속 후 문자열 입력
+	- hello
+4. 기대 결과
+	- server : (hello\n 총 6바이트)
+		- telnet은 환경에 따라 줄 끝을 CRLF(\r\n)로 보낼 수 있음
+	- client : 입력한 문자열 "hello"가 다시 출력
 
 클라이언트 실행 후 터미널에 문자열을 입력하면 서버가 그대로 돌려준다.
 
