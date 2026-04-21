@@ -63,9 +63,9 @@ int main(int argc, char **argv)
 
 static void echo(int connfd)
 {
-    size_t n;
-    char buf[MAXLINE];
-    rio_t rio;
+    size_t n;          // 한 번 읽을 때 받은 바이트 수
+    char buf[MAXLINE]; // 클라이언트가 보낸 데이터를 잠시 저장하는 버퍼
+    rio_t rio;         // robust I/O 패키지의 buffered I/O 상태 구조체
 
     Rio_readinitb(&rio, connfd);
     while ((n = Rio_readlineb(&rio, buf, MAXLINE)) != 0)
